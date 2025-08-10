@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Quiz Login — SWR Hubballi</title>
+<meta name="theme-color" content="#0b61f3">
+<style>
+  :root {
+    --bg:#0b61f30a; --card:#fff; --ink:#0f172a; --muted:#475569;
+    --accent:#0b61f3; --border:#e2e8f0; --ok:#059669; --bad:#dc2626;
+  }
+  * { box-sizing: border-box; }
+  html, body { height:100%; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Arial, sans-serif; }
+  .wrap { max-width: 540px; margin: 0 auto; padding: env(safe-area-inset-top) 12px 32px; }
+  header { text-align:center; padding: 24px 0 12px; }
+  header h1 { font-size: 20px; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); font-size: 13px; }
+  .card { background: var(--card); border:1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+  label { display:block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  select, input[type="password"] {
+    width: 100%; border:2px solid var(--border); border-radius:12px; padding: 12px; font-size:15px; background:#fff;
+  }
+  .row { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .btn { width:100%; margin-top: 12px; border: none; border-radius: 12px; padding: 14px; font-weight:800;
+         background: var(--accent); color: #fff; }
+  .btn:active { transform: translateY(1px); }
+  .pill { display:inline-block; padding:4px 8px; border-radius:999px; background:#eef2ff; border:1px solid #c7d2fe; color:#1e3a8a; font-size:12px; }
+  footer { text-align:center; color:var(--muted); font-size:12px; margin: 14px 0 20px; }
+  .err { color: var(--bad); font-weight:700; font-size: 13px; margin-top:8px; display:none; }
+  .ok { color: var(--ok); font-weight:700; font-size: 13px; margin-top:8px; display:none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Quiz Login <span class="pill">SWR Hubballi</span></h1>
+      <p>Welfare Inspectors only. Authenticate to start the coach‑level quiz.</p>
+    </header>
+
+    <section class="card">
+      <label for="wi">Welfare Inspector</label>
+      <select id="wi">
+        <option value="">— Select —</option>
+        <option value="santosh">Santosh</option>
+        <option value="nikhil">Nikhil</option>
+        <option value="sukumar">Sukumar</option>
+      </select>
+
+      <div class="row" style="margin-top:12px;">
+        <div>
+          <label for="coach">Coach</label>
+          <select id="coach">
+            <option value="">— Select —</option>
+            <option value="A">Coach A</option>
+            <option value="B">Coach B</option>
+            <option value="C">Coach C</option>
+          </select>
+        </div>
+        <div>
+          <label for="schoolMix">School representation confirmed?</label>
+          <select id="schoolMix">
+            <option value="">— Select —</option>
+            <option value="yes">Yes</option>
+            <option value="partial">Partial</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <label for="pass">Passcode</label>
+        <input id="pass" type="password" placeholder="Enter passcode" />
+      </div>
+
+      <button class="btn" id="loginBtn">Login & Start</button>
+      <div class="err" id="err">Invalid credentials. Please check your name, coach and passcode.</div>
+      <div class="ok" id="ok">Authenticated. Redirecting…</div>
+    </section>
+
+    <footer>For support, contact the DRM office. Built mobile‑first for on‑board use.</footer>
+  </div>
+
+<script>
+/**
+ * Replace this endpoint with your Google Apps Script Web App URL (doPost).
+ * Example: const WEBHOOK = "https://script.google.com/macros/s/AKfycbx.../exec";
+ */
+const WEBHOOK = "https://script.google.com/macros/s/AKfycbylsFrITp5FJUaq5DVxP99Wg8FE62D4ucwGuDFvWJXzyI53_f6b6-vwiZhHyLySmJxfTg/exec";
+
+/** Simple credential map (client side). For stronger control, switch to Netlify Identity/Firebase. */
+const CREDS = {
+  santosh: "SWR-2025-S1",
+  nikhil:  "SWR-2025-N1",
+  sukumar: "SWR-2025-K1"
+};
+
+function postEvent(payload){
+  if (!WEBHOOK || WEBHOOK.startsWith("REPLACE_")) return;
+  try {
+    fetch(WEBHOOK, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    });
+  } catch(e){ /* ignore network errors for offline use */ }
+}
+
+document.getElementById('loginBtn').addEventListener('click', async ()=>{
+  const wi = (document.getElementById('wi').value || "").toLowerCase();
+  const coach = document.getElementById('coach').value;
+  const schoolMix = document.getElementById('schoolMix').value;
+  const pass = document.getElementById('pass').value.trim();
+
+  const err = document.getElementById('err');
+  const ok = document.getElementById('ok');
+  err.style.display = "none"; ok.style.display = "none";
+
+  if (!wi || !coach || !schoolMix || !pass){ err.textContent = "All fields are required."; err.style.display = "block"; return; }
+  if (!(wi in CREDS) || CREDS[wi] !== pass){ err.style.display = "block"; return; }
+
+  // session token
+  const token = {
+    wi, coach, schoolMix,
+    t: Date.now(),
+    ua: navigator.userAgent
+  };
+  localStorage.setItem("quiz_session", JSON.stringify(token));
+
+  // webhook logging (login)
+  postEvent({event:"login", ...token});
+
+  ok.style.display = "block";
+  setTimeout(()=>{ window.location.href = "quiz.html"; }, 700);
+});
+</script>
+</body>
+</html>

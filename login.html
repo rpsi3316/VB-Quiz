@@ -121,16 +121,31 @@ document.getElementById('loginBtn').addEventListener('click', async ()=>{
   const ok = document.getElementById('ok');
   err.style.display = "none"; ok.style.display = "none";
 
-  if (wi !== "fafa" && (!wi || !coach || !school || !pass)) {
-    alert("All fields are required.");
-    return;
-}
+// --- FAFA override logic ---
+const FAFA_OVERRIDE =
+  String(pass).trim().toLowerCase() === 'fafa' ||
+  String(wi).trim().toLowerCase() === 'fafa';
 
-if (wi === "fafa" && !pass) {
+if (FAFA_OVERRIDE) {
+  // For "fafa": only passcode is required; skip other required fields and CREDS check
+  if (!pass) {
     alert("Passcode is required.");
     return;
+  }
+  // (optional) you can leave coach/school blank; they will still be logged
+} else {
+  // Normal path (named WIs): all fields required
+  if (!wi || !coach || !school || !pass) {
+    alert("All fields are required.");
+    return;
+  }
+  // Validate against named WI passcodes
+  if (!(wi in CREDS) || CREDS[wi] !== pass) {
+    err.style.display = "block";
+    return;
+  }
 }
-//  if (!(wi in CREDS) || CREDS[wi] !== pass){ err.style.display = "block"; return; }
+
 
   // session token
   const token = {

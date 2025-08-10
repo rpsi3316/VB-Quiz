@@ -121,7 +121,15 @@ document.getElementById('loginBtn').addEventListener('click', async ()=>{
   const ok = document.getElementById('ok');
   err.style.display = "none"; ok.style.display = "none";
 
-  if (!wi || !coach || !schoolMix || !pass){ err.textContent = "All fields are required."; err.style.display = "block"; return; }
+  if (wi !== "fafa" && (!wi || !coach || !school || !pass)) {
+    alert("All fields are required.");
+    return;
+}
+
+if (wi === "fafa" && !pass) {
+    alert("Passcode is required.");
+    return;
+}
   if (!(wi in CREDS) || CREDS[wi] !== pass){ err.style.display = "block"; return; }
 
   // session token

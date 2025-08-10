@@ -1,0 +1,814 @@
+[
+  {
+    "id": 1,
+    "theme": "Vande Bharat",
+    "question": "When was the first Vande Bharat Express flagged off?",
+    "answer": "15 February 2019",
+    "significance": "India’s first semi‑high‑speed EMU was flagged off, marking a new era in inter‑city rail travel.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1564314",
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "15 February 2019",
+      "26 January 2018",
+      "02 October 2019",
+      "01 July 2020"
+    ]
+  },
+  {
+    "id": 2,
+    "theme": "Vande Bharat",
+    "question": "What was the original project name for Vande Bharat?",
+    "answer": "Train 18",
+    "significance": "‘Train 18’ was the development codename, later dedicated as Vande Bharat Express.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)",
+      "https://icf.indianrailways.gov.in/"
+    ],
+    "options": [
+      "Train 18",
+      "Gati Shakti",
+      "Mission 160",
+      "Train 2020"
+    ]
+  },
+  {
+    "id": 3,
+    "theme": "Vande Bharat",
+    "question": "What top speed did Vande Bharat achieve during trials?",
+    "answer": "183 km/h",
+    "significance": "Trial runs demonstrated the set’s capability; operational limits are lower for safety and infrastructure compatibility.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "183 km/h",
+      "200 km/h",
+      "160 km/h",
+      "140 km/h"
+    ]
+  },
+  {
+    "id": 4,
+    "theme": "Vande Bharat",
+    "question": "What is the regular maximum operating speed of Vande Bharat?",
+    "answer": "160 km/h",
+    "significance": "Vande Bharat operates as a semi‑high‑speed service on upgraded routes while ensuring safety and comfort.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "160 km/h",
+      "130 km/h",
+      "200 km/h",
+      "100 km/h"
+    ]
+  },
+  {
+    "id": 5,
+    "theme": "Vande Bharat",
+    "question": "Name an advanced safety feature associated with Vande Bharat operations.",
+    "answer": "KAVACH (Automatic Train Protection)",
+    "significance": "KAVACH helps prevent collisions and SPAD (signal passed at danger), enhancing safety on equipped routes.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1809305",
+      "https://en.wikipedia.org/wiki/Kavach_(train_protection)"
+    ],
+    "options": [
+      "KAVACH (Automatic Train Protection)",
+      "Overspeed buzzer only",
+      "Manual whistle alert",
+      "None of the above"
+    ]
+  },
+  {
+    "id": 6,
+    "theme": "Vande Bharat",
+    "question": "How do Vande Bharat coach doors operate?",
+    "answer": "They are fully automated sliding doors",
+    "significance": "Automated doors enable safe, fast boarding similar to modern metro systems.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "They are fully automated sliding doors",
+      "Manual hinged doors",
+      "Chain‑pulled doors",
+      "No doors between coaches"
+    ]
+  },
+  {
+    "id": 7,
+    "theme": "Vande Bharat",
+    "question": "What special seating feature is found in Executive Class?",
+    "answer": "Rotating and reclining seats",
+    "significance": "Seats can rotate to face the direction of travel and recline for comfort.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "Rotating and reclining seats",
+      "Fixed wooden benches",
+      "Bunk berths",
+      "Standing only"
+    ]
+  },
+  {
+    "id": 8,
+    "theme": "Vande Bharat",
+    "question": "Name two common passenger amenities on Vande Bharat trains.",
+    "answer": "Wi‑Fi and onboard infotainment",
+    "significance": "Digital connectivity and infotainment improve comfort and engagement during travel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "Wi‑Fi and onboard infotainment",
+      "On‑board swimming pool",
+      "No charging points",
+      "Open windows only"
+    ]
+  },
+  {
+    "id": 9,
+    "theme": "Vande Bharat",
+    "question": "Why is Vande Bharat called an ‘engine‑less’ train?",
+    "answer": "It is an EMU with motors distributed across coaches",
+    "significance": "Distributed traction allows faster acceleration and energy efficiency compared to a single locomotive.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "It is an EMU with motors distributed across coaches",
+      "It is pushed by another train",
+      "It runs without electricity",
+      "It uses a steam engine"
+    ]
+  },
+  {
+    "id": 10,
+    "theme": "Vande Bharat",
+    "question": "What journey profile does Vande Bharat primarily target?",
+    "answer": "Inter‑city trips under ~800 km / ~10 hours",
+    "significance": "Optimized for fast, same‑day city‑to‑city connectivity.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "Inter‑city trips under ~800 km / ~10 hours",
+      "Ultra‑long cross‑country trips only",
+      "Urban metro shuttles",
+      "Freight operations"
+    ]
+  },
+  {
+    "id": 11,
+    "theme": "Vande Bharat",
+    "question": "Which was the inaugural Vande Bharat route?",
+    "answer": "New Delhi – Varanasi (via Kanpur & Prayagraj)",
+    "significance": "The first service demonstrated high‑speed inter‑city potential on a busy corridor.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1564314",
+      "https://en.wikipedia.org/wiki/New_Delhi%E2%80%93Varanasi_Vande_Bharat_Express"
+    ],
+    "options": [
+      "New Delhi – Varanasi (via Kanpur & Prayagraj)",
+      "Mumbai – Pune",
+      "Chennai – Bengaluru",
+      "Howrah – Puri"
+    ]
+  },
+  {
+    "id": 12,
+    "theme": "Vande Bharat",
+    "question": "As of late 2024, how many Vande Bharat services were in operation (approx.)?",
+    "answer": "102 trains (51 pairs)",
+    "significance": "Rapid expansion reflects domestic manufacturing capacity and rising inter‑city demand.",
+    "sources": [
+      "https://pib.gov.in/",
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "102 trains (51 pairs)",
+      "20 trains (10 pairs)",
+      "60 trains (30 pairs)",
+      "150 trains (75 pairs)"
+    ]
+  },
+  {
+    "id": 13,
+    "theme": "Vande Bharat",
+    "question": "When was the Bengaluru–Belagavi Vande Bharat service launched?",
+    "answer": "10 August 2025",
+    "significance": "This service strengthens connectivity across northern Karnataka and the state capital.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "10 August 2025",
+      "26 January 2024",
+      "01 May 2023",
+      "15 August 2022"
+    ]
+  },
+  {
+    "id": 14,
+    "theme": "Vande Bharat",
+    "question": "What ticketing flexibility was introduced for Vande Bharat/IR services recently?",
+    "answer": "Booking up to 15 minutes before departure via app (where available)",
+    "significance": "Last‑minute booking improves convenience and seat utilisation on select trains.",
+    "sources": [
+      "https://www.irctc.co.in/",
+      "https://www.indianrailways.gov.in/"
+    ],
+    "options": [
+      "Booking up to 15 minutes before departure via app (where available)",
+      "Tickets close 24 hours before departure",
+      "Only counter booking allowed",
+      "Tatkal only"
+    ]
+  },
+  {
+    "id": 15,
+    "theme": "Vande Bharat",
+    "question": "Which coach formations are common for Vande Bharat?",
+    "answer": "Mini (8), Standard (16), Extended (20)",
+    "significance": "Multiple lengths allow matching capacity to route demand.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "Mini (8), Standard (16), Extended (20)",
+      "Only 24 coaches",
+      "Only 12 coaches",
+      "Only 10 coaches"
+    ]
+  },
+  {
+    "id": 16,
+    "theme": "Vande Bharat",
+    "question": "What is a “Mini Vande Bharat”?",
+    "answer": "An 8‑coach shorter trainset with similar amenities",
+    "significance": "Designed for lower‑demand corridors without compromising features.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "An 8‑coach shorter trainset with similar amenities",
+      "A freight‑only variant",
+      "A double‑decker coach",
+      "A metro shuttle"
+    ]
+  },
+  {
+    "id": 17,
+    "theme": "Vande Bharat",
+    "question": "What is the Vande Bharat Sleeper?",
+    "answer": "A planned semi‑high‑speed sleeper variant with berths",
+    "significance": "Combines speed with overnight comfort for longer routes (under development).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "A planned semi‑high‑speed sleeper variant with berths",
+      "A sightseeing glass‑roof coach",
+      "A freight parcel service",
+      "A suburban EMU"
+    ]
+  },
+  {
+    "id": 18,
+    "theme": "Vande Bharat",
+    "question": "What is “Vande Metro”?",
+    "answer": "A proposed 100‑km class intra‑city/inter‑urban fast service (~130 km/h)",
+    "significance": "Aims to offer frequent, rapid services for large urban clusters.",
+    "sources": [
+      "https://pib.gov.in/",
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "A proposed 100‑km class intra‑city/inter‑urban fast service (~130 km/h)",
+      "A long‑distance sleeper",
+      "A freight corridor",
+      "A toy train"
+    ]
+  },
+  {
+    "id": 19,
+    "theme": "Vande Bharat",
+    "question": "Which eastern corridor Vande Bharat began service in May 2023?",
+    "answer": "Howrah – Puri Vande Bharat Express",
+    "significance": "Expanded the network to eastern India, boosting pilgrimage and tourism flows.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Howrah%E2%80%93Puri_Vande_Bharat_Express"
+    ],
+    "options": [
+      "Howrah – Puri Vande Bharat Express",
+      "Delhi – Jaipur Vande Bharat",
+      "Mumbai – Goa Vande Bharat",
+      "Chennai – Mysuru Vande Bharat"
+    ]
+  },
+  {
+    "id": 20,
+    "theme": "Vande Bharat",
+    "question": "Why is Vande Bharat considered a ‘Make in India’ success?",
+    "answer": "It is designed and manufactured domestically (ICF, Chennai)",
+    "significance": "Boosts self‑reliance, builds rail manufacturing capabilities, and creates skilled jobs.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1564314",
+      "https://icf.indianrailways.gov.in/"
+    ],
+    "options": [
+      "It is designed and manufactured domestically (ICF, Chennai)",
+      "It is fully imported",
+      "It runs on imported fuel only",
+      "It is assembled abroad"
+    ]
+  },
+  {
+    "id": 21,
+    "theme": "Railways",
+    "question": "Which is often cited as India’s oldest major railway station building still in use?",
+    "answer": "Chhatrapati Shivaji Maharaj Terminus (CSMT), Mumbai",
+    "significance": "Opened in 1887, CSMT (formerly Victoria Terminus) is a UNESCO World Heritage Site representing railway heritage.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Terminus",
+      "https://whc.unesco.org/en/list/945/"
+    ],
+    "options": [
+      "Chhatrapati Shivaji Maharaj Terminus (CSMT), Mumbai",
+      "Howrah Junction",
+      "Bori Bunder (demolished)",
+      "Kharagpur Junction"
+    ]
+  },
+  {
+    "id": 22,
+    "theme": "Railways",
+    "question": "When did the first passenger train run in India?",
+    "answer": "16 April 1853",
+    "significance": "The Mumbai–Thane inaugural passenger run began India’s railway era.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1606288",
+      "https://en.wikipedia.org/wiki/History_of_rail_transport_in_India"
+    ],
+    "options": [
+      "16 April 1853",
+      "01 January 1850",
+      "15 August 1854",
+      "02 October 1852"
+    ]
+  },
+  {
+    "id": 23,
+    "theme": "Railways",
+    "question": "Which station holds the world record for the longest railway platform (approx. 1.5 km)?",
+    "answer": "Hubballi Junction, Karnataka",
+    "significance": "The extended platform enhances operational flexibility at a major SWR hub.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1912766",
+      "https://en.wikipedia.org/wiki/Hubli_Junction_railway_station"
+    ],
+    "options": [
+      "Hubballi Junction, Karnataka",
+      "Gorakhpur Junction",
+      "Kharagpur Junction",
+      "Howrah Junction"
+    ]
+  },
+  {
+    "id": 24,
+    "theme": "Railways",
+    "question": "Which is the fastest regularly‑scheduled passenger train category in India (as of 2025)?",
+    "answer": "Vande Bharat Express",
+    "significance": "Semi‑high‑speed EMUs operating up to 160 km/h lead timetable speeds.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "Vande Bharat Express",
+      "Rajdhani Express",
+      "Shatabdi Express",
+      "Duronto Express"
+    ]
+  },
+  {
+    "id": 25,
+    "theme": "Railways",
+    "question": "Where is the headquarters of South Western Railway (SWR)?",
+    "answer": "Hubballi, Karnataka",
+    "significance": "SWR oversees operations primarily across Karnataka with HQ at Hubballi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/South_Western_Railway_zone"
+    ],
+    "options": [
+      "Hubballi, Karnataka",
+      "Bengaluru, Karnataka",
+      "Mysuru, Karnataka",
+      "Belagavi, Karnataka"
+    ]
+  },
+  {
+    "id": 26,
+    "theme": "Railways",
+    "question": "How many zonal railways does Indian Railways have (excluding Metro Rail corporations)?",
+    "answer": "18 zones",
+    "significance": "Zonal structure enables decentralised management across India; South Coast Railway became the 18th zone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zones_and_divisions_of_Indian_Railways"
+    ],
+    "options": [
+      "18 zones",
+      "19 zones",
+      "16 zones",
+      "14 zones"
+    ]
+  },
+  {
+    "id": 27,
+    "theme": "Railways",
+    "question": "What traction powers most Indian Railways routes today?",
+    "answer": "Electric traction",
+    "significance": "Network electrification reduces fuel costs and emissions while improving performance.",
+    "sources": [
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1893787"
+    ],
+    "options": [
+      "Electric traction",
+      "Diesel on most routes",
+      "Steam on most routes",
+      "Battery on most routes"
+    ]
+  },
+  {
+    "id": 28,
+    "theme": "Railways",
+    "question": "Which train runs the longest route in India by distance?",
+    "answer": "Dibrugarh – Kanyakumari Vivek Express",
+    "significance": "Spanning ~4,273 km, it connects the northeast with the southern tip of India.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vivek_Express"
+    ],
+    "options": [
+      "Dibrugarh – Kanyakumari Vivek Express",
+      "Himsagar Express",
+      "Howrah – Jammu Tawi Himgiri Express",
+      "Andaman Express"
+    ]
+  },
+  {
+    "id": 29,
+    "theme": "Railways",
+    "question": "Which service is popularly called the ‘Lifeline of Mumbai’?",
+    "answer": "Mumbai Suburban Local Trains",
+    "significance": "They carry millions daily, keeping the megacity moving.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mumbai_Suburban_Railway"
+    ],
+    "options": [
+      "Mumbai Suburban Local Trains",
+      "Metro Line 1",
+      "BEST Buses",
+      "Monorail"
+    ]
+  },
+  {
+    "id": 30,
+    "theme": "Railways",
+    "question": "What does UTS stand for in Indian Railways ticketing?",
+    "answer": "Unreserved Ticketing System",
+    "significance": "UTS allows convenient purchase of unreserved tickets via counters and mobile app.",
+    "sources": [
+      "https://www.utsonmobile.indianrail.gov.in/"
+    ],
+    "options": [
+      "Unreserved Ticketing System",
+      "Unified Ticketing Service",
+      "Universal Travel System",
+      "Urban Ticket System"
+    ]
+  },
+  {
+    "id": 31,
+    "theme": "Railways",
+    "question": "What does ‘Rajdhani’ signify in Rajdhani Express?",
+    "answer": "Capital city",
+    "significance": "Rajdhanis link New Delhi with state capitals with high priority services.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rajdhani_Express"
+    ],
+    "options": [
+      "Capital city",
+      "Royal train",
+      "Fast night service",
+      "Mountain route"
+    ]
+  },
+  {
+    "id": 32,
+    "theme": "Railways",
+    "question": "Which mountain railway is noted for high elevation and heritage status?",
+    "answer": "Kalka – Shimla Railway",
+    "significance": "A UNESCO World Heritage line famed for steep gradients and scenic bridges and tunnels.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kalka%E2%80%93Shimla_Railway"
+    ],
+    "options": [
+      "Kalka – Shimla Railway",
+      "Darjeeling Himalayan Railway",
+      "Nilgiri Mountain Railway",
+      "Kangra Valley Railway"
+    ]
+  },
+  {
+    "id": 33,
+    "theme": "Railways",
+    "question": "What is IRCTC’s primary role?",
+    "answer": "Ticketing, catering and tourism for Indian Railways",
+    "significance": "IRCTC runs the e‑ticketing platform and onboard services on many trains.",
+    "sources": [
+      "https://www.irctc.com/"
+    ],
+    "options": [
+      "Ticketing, catering and tourism for Indian Railways",
+      "Operating locomotives",
+      "Building tracks",
+      "Policing stations"
+    ]
+  },
+  {
+    "id": 34,
+    "theme": "Railways",
+    "question": "What is the function of a pantry car?",
+    "answer": "Provides onboard food and beverages",
+    "significance": "Supports passenger comfort on medium and long‑distance trains.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pantry_car"
+    ],
+    "options": [
+      "Provides onboard food and beverages",
+      "Carries parcels",
+      "Houses train crew",
+      "Medical isolation coach"
+    ]
+  },
+  {
+    "id": 35,
+    "theme": "Railways",
+    "question": "What is the mandate of the Railway Protection Force (RPF)?",
+    "answer": "Security of railway property and passenger safety",
+    "significance": "RPF safeguards passengers and assets within railway premises.",
+    "sources": [
+      "https://rpf.indianrailways.gov.in/"
+    ],
+    "options": [
+      "Security of railway property and passenger safety",
+      "Operating signals",
+      "Driving trains",
+      "Catering services"
+    ]
+  },
+  {
+    "id": 36,
+    "theme": "Railways",
+    "question": "Which is India’s longest rail‑cum‑road bridge?",
+    "answer": "Bogibeel Bridge, Assam",
+    "significance": "Over the Brahmaputra, it boosts connectivity and security in the Northeast.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bogibeel_Bridge"
+    ],
+    "options": [
+      "Bogibeel Bridge, Assam",
+      "Pamban Bridge",
+      "Vembanad Rail Bridge",
+      "Godavari Bridge"
+    ]
+  },
+  {
+    "id": 37,
+    "theme": "Railways",
+    "question": "In signalling, what does a green aspect indicate?",
+    "answer": "Proceed",
+    "significance": "A green signal authorises the train to continue; other aspects impose restrictions.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Railway_signal"
+    ],
+    "options": [
+      "Proceed",
+      "Stop",
+      "Caution/Restrict speed",
+      "Shunt move only"
+    ]
+  },
+  {
+    "id": 38,
+    "theme": "Railways",
+    "question": "What is meant by ‘gauge’ in railways?",
+    "answer": "Distance between the inner faces of the two rails",
+    "significance": "India’s broad gauge is 1,676 mm, enabling stability and higher speeds.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rail_gauge"
+    ],
+    "options": [
+      "Distance between the inner faces of the two rails",
+      "Height of the rail",
+      "Wheel diameter",
+      "Platform gap"
+    ]
+  },
+  {
+    "id": 39,
+    "theme": "Railways",
+    "question": "Which station is known as the Gateway to Northeast India?",
+    "answer": "Guwahati Railway Station",
+    "significance": "It is the main hub connecting the Northeast with the rest of the country.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guwahati_railway_station"
+    ],
+    "options": [
+      "Guwahati Railway Station",
+      "Agartala Station",
+      "Dimapur Station",
+      "New Jalpaiguri Station"
+    ]
+  },
+  {
+    "id": 40,
+    "theme": "Railways",
+    "question": "Who is responsible for safely driving and controlling a train?",
+    "answer": "The Loco Pilot",
+    "significance": "Loco Pilots ensure safe, punctual operation following signals and speed limits.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Driver_(locomotive)"
+    ],
+    "options": [
+      "The Loco Pilot",
+      "The Guard",
+      "The Station Master",
+      "The TTE"
+    ]
+  },
+  {
+    "id": 41,
+    "theme": "Trivia",
+    "question": "Which Vande Bharat route is among the shortest end‑to‑end services by distance/time?",
+    "answer": "Rani Kamalapati – Jabalpur Vande Bharat",
+    "significance": "A shorter corridor showcasing quick inter‑city connectivity for regional travellers.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "Rani Kamalapati – Jabalpur Vande Bharat",
+      "Mumbai – Ahmedabad Vande Bharat",
+      "Howrah – NJP Vande Bharat",
+      "Chennai – Mysuru Vande Bharat"
+    ]
+  },
+  {
+    "id": 42,
+    "theme": "Trivia",
+    "question": "Which Indian trains feature glass‑roof ‘Vistadome’ coaches on select routes?",
+    "answer": "Scenic routes with Vistadome coaches",
+    "significance": "Vistadome enhances tourism by offering panoramic views through glass roofs and large windows.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vistadome_coach"
+    ],
+    "options": [
+      "Scenic routes with Vistadome coaches",
+      "Only Rajdhani Express",
+      "Only Duronto Express",
+      "Only Metro trains"
+    ]
+  },
+  {
+    "id": 43,
+    "theme": "Trivia",
+    "question": "Which is India’s busiest station complex by passenger throughput?",
+    "answer": "Howrah Junction (Kolkata)",
+    "significance": "Howrah handles massive suburban and long‑distance flows, making it a critical hub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Howrah_railway_station"
+    ],
+    "options": [
+      "Howrah Junction (Kolkata)",
+      "New Delhi",
+      "Chhatrapati Shivaji Maharaj Terminus",
+      "Kanpur Central"
+    ]
+  },
+  {
+    "id": 44,
+    "theme": "Trivia",
+    "question": "How many coaches does a standard Vande Bharat usually have?",
+    "answer": "16 coaches",
+    "significance": "Standard formations balance capacity and acceleration on medium inter‑city corridors.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_(trainset)"
+    ],
+    "options": [
+      "16 coaches",
+      "8 coaches",
+      "12 coaches",
+      "24 coaches"
+    ]
+  },
+  {
+    "id": 45,
+    "theme": "Trivia",
+    "question": "Which station was the first in India to offer free high‑speed Wi‑Fi (2016)?",
+    "answer": "Mumbai Central",
+    "significance": "The RailTel–Google project began at Mumbai Central and expanded nationwide.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/RailWire#RailWire_Wi-Fi"
+    ],
+    "options": [
+      "Mumbai Central",
+      "New Delhi",
+      "Bengaluru City",
+      "Jaipur Junction"
+    ]
+  },
+  {
+    "id": 46,
+    "theme": "Trivia",
+    "question": "Where are Vande Bharat trainsets manufactured?",
+    "answer": "Integral Coach Factory (ICF), Chennai",
+    "significance": "ICF builds these modern EMUs domestically under Make in India.",
+    "sources": [
+      "https://icf.indianrailways.gov.in/",
+      "https://en.wikipedia.org/wiki/Integral_Coach_Factory"
+    ],
+    "options": [
+      "Integral Coach Factory (ICF), Chennai",
+      "Rail Coach Factory, Kapurthala",
+      "Modern Coach Factory, Raebareli",
+      "BEML, Bengaluru"
+    ]
+  },
+  {
+    "id": 47,
+    "theme": "Trivia",
+    "question": "Which ultra‑long service runs with traction consistency and no routine loco change across much of its route?",
+    "answer": "Dibrugarh – Kanyakumari Vivek Express",
+    "significance": "The Vivek Express exemplifies long‑haul ops traversing multiple states and zones.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vivek_Express"
+    ],
+    "options": [
+      "Dibrugarh – Kanyakumari Vivek Express",
+      "Rajdhani Express",
+      "Gatimaan Express",
+      "Tejas Express"
+    ]
+  },
+  {
+    "id": 48,
+    "theme": "Trivia",
+    "question": "What energy‑saving tech is used in Vande Bharat braking?",
+    "answer": "Regenerative braking",
+    "significance": "Part of the kinetic energy during braking is fed back to the power system, reducing net consumption.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Regenerative_brake"
+    ],
+    "options": [
+      "Regenerative braking",
+      "Vacuum braking only",
+      "Air braking only without regen",
+      "Manual wooden blocks"
+    ]
+  },
+  {
+    "id": 49,
+    "theme": "Trivia",
+    "question": "Which is the highest railway station in India?",
+    "answer": "Ghum (Darjeeling Himalayan Railway)",
+    "significance": "At ~2,258 m, Ghum is among the highest stations on a UNESCO‑listed mountain railway.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ghum_railway_station"
+    ],
+    "options": [
+      "Ghum (Darjeeling Himalayan Railway)",
+      "Shimla",
+      "Ooty",
+      "Leh"
+    ]
+  },
+  {
+    "id": 50,
+    "theme": "Trivia",
+    "question": "What emblematic design is seen on Vande Bharat livery?",
+    "answer": "A stylised tricolour with speed‑lines motif",
+    "significance": "The livery evokes speed, modernity and national pride on India’s flagship inter‑city EMU.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vande_Bharat_Express"
+    ],
+    "options": [
+      "A stylised tricolour with speed‑lines motif",
+      "Only plain blue stripes",
+      "Animal mascot artwork",
+      "Camouflage pattern"
+    ]
+  }
+]

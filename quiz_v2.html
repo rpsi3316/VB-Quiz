@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vande Bharat & Railways Quiz</title>
+<style>
+  body { font-family: Arial, sans-serif; display: flex; background: #f4f6f9; margin: 0; }
+  .score-panel { width: 30%; background: white; padding: 15px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
+  .score-panel h3 { margin-top: 0; }
+  .main { flex: 1; padding: 20px; }
+  .question { font-size: 1.2em; margin-bottom: 20px; }
+  .options button { display: block; width: 100%; margin: 5px 0; padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 4px; background: white; cursor: pointer; }
+  .options button:hover { background: #f0f0f0; }
+  .nav-buttons { margin-top: 20px; }
+  .nav-buttons button { margin: 5px; padding: 10px 15px; font-size: 1em; }
+  .correct { background: #28a745; color: white; }
+  .wrong { background: #dc3545; color: white; }
+</style>
+</head>
+<body>
+<div class="score-panel">
+  <h3>Coach Score</h3>
+  <p>Total: <span id="total">0</span></p>
+  <p>Correct: <span id="correct">0</span></p>
+  <p>Wrong: <span id="wrong">0</span></p>
+  <p>Accuracy: <span id="accuracy">0%</span></p>
+</div>
+<div class="main">
+  <div id="question-box" class="question"></div>
+  <div id="options" class="options"></div>
+  <div id="significance" style="margin-top: 15px; font-style: italic;"></div>
+  <div class="nav-buttons">
+    <button onclick="prevQuestion()">Previous</button>
+    <button onclick="nextQuestion()">Next</button>
+    <button onclick="resetQuiz()">Reset Session</button>
+  </div>
+</div>
+<script>
+let questions = [];
+let current = 0;
+let correctCount = 0;
+let wrongCount = 0;
+
+const WEBHOOK = "REPLACE_WITH_APPS_SCRIPT_URL";
+
+fetch('Questions_v2.json')
+  .then(res => res.json())
+  .then(data => {
+    questions = data.sort(() => Math.random() - 0.5);
+    loadQuestion();
+  });
+
+function loadQuestion() {
+  const q = questions[current];
+  document.getElementById('question-box').innerText = q.question;
+  const optionsBox = document.getElementById('options');
+  optionsBox.innerHTML = '';
+  q.options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.onclick = () => checkAnswer(opt, q.answer, q.significance);
+    optionsBox.appendChild(btn);
+  });
+}
+
+function checkAnswer(choice, answer, significance) {
+  document.getElementById('significance').innerText = significance;
+  const buttons = document.querySelectorAll('#options button');
+  buttons.forEach(b => {
+    if (b.textContent === answer) b.classList.add('correct');
+    else if (b.textContent === choice) b.classList.add('wrong');
+    b.disabled = true;
+  });
+
+  if (choice === answer) correctCount++; else wrongCount++;
+  updateScore();
+  logEvent(choice === answer);
+}
+
+function nextQuestion() {
+  if (current < questions.length - 1) { current++; loadQuestion(); resetButtons(); }
+}
+function prevQuestion() {
+  if (current > 0) { current--; loadQuestion(); resetButtons(); }
+}
+function resetButtons() {
+  document.getElementById('significance').innerText = '';
+}
+function resetQuiz() {
+  current = 0; correctCount = 0; wrongCount = 0;
+  updateScore(); loadQuestion(); resetButtons();
+}
+
+function updateScore() {
+  const total = correctCount + wrongCount;
+  document.getElementById('total').innerText = total;
+  document.getElementById('correct').innerText = correctCount;
+  document.getElementById('wrong').innerText = wrongCount;
+  document.getElementById('accuracy').innerText = total ? Math.round((correctCount / total) * 100) + '%' : '0%';
+}
+
+function logEvent(correct) {
+  fetch(WEBHOOK, {
+    method: "POST",
+    body: JSON.stringify({
+      event: "answer",
+      wi: sessionStorage.getItem('wi'),
+      coach: sessionStorage.getItem('coach'),
+      schoolMix: sessionStorage.getItem('school'),
+      qid: current + 1,
+      correct: correct
+    })
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Login</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+  .container { max-width: 400px; background: white; padding: 20px; border-radius: 8px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  h2 { text-align: center; margin-bottom: 20px; }
+  label { display: block; margin-top: 10px; }
+  select, input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+  button { width: 100%; margin-top: 20px; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+  button:hover { background: #0056b3; }
+  .error { color: red; display: none; text-align: center; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Quiz Login</h2>
+  <label for="wi">Welfare Inspector</label>
+  <select id="wi">
+    <option value="">Select WI</option>
+    <option value="Santosh">Santosh</option>
+    <option value="Nikhil">Nikhil</option>
+    <option value="Sukumar">Sukumar</option>
+    <option value="fafa">FAFA (Guest)</option>
+  </select>
+  <label for="coach">Coach</label>
+  <input type="text" id="coach" placeholder="Enter coach (optional for FAFA)">
+  <label for="school">School</label>
+  <input type="text" id="school" placeholder="Enter school (optional for FAFA)">
+  <label for="pass">Passcode</label>
+  <input type="password" id="pass" placeholder="Enter passcode">
+  <div class="error" id="err">Invalid credentials</div>
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+const CREDS = { "Santosh":"1234", "Nikhil":"5678", "Sukumar":"abcd" };
+const WEBHOOK = "REPLACE_WITH_APPS_SCRIPT_URL";
+
+function login() {
+  const wi = document.getElementById('wi').value.trim();
+  const coach = document.getElementById('coach').value.trim();
+  const school = document.getElementById('school').value.trim();
+  const pass = document.getElementById('pass').value.trim();
+  const err = document.getElementById('err');
+
+  const FAFA_OVERRIDE = pass.toLowerCase() === 'fafa' || wi.toLowerCase() === 'fafa';
+
+  if (FAFA_OVERRIDE) {
+    if (!pass) { alert("Passcode is required."); return; }
+  } else {
+    if (!wi || !coach || !school || !pass) { alert("All fields are required."); return; }
+    if (!(wi in CREDS) || CREDS[wi] !== pass) { err.style.display = "block"; return; }
+  }
+
+  sessionStorage.setItem('wi', wi || 'FAFA');
+  sessionStorage.setItem('coach', coach || 'Generic');
+  sessionStorage.setItem('school', school || 'N/A');
+
+  fetch(WEBHOOK, {
+    method: "POST",
+    body: JSON.stringify({
+      event: "session_start",
+      wi: wi || 'FAFA',
+      coach: coach || 'Generic',
+      schoolMix: school || 'N/A'
+    })
+  });
+
+  window.location.href = "quiz_v2.html";
+}
+</script>
+</body>
+</html>

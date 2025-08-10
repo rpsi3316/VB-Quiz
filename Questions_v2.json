@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Who is responsible for safely driving and controlling a train?",
+    "options": ["The Loco Pilot", "The Guard", "The Station Master", "The TTE"],
+    "answer": "The Loco Pilot",
+    "significance": "The Loco Pilot is trained to handle the train’s controls, ensuring safety and punctuality."
+  },
+  {
+    "question": "Which Indian train is known for its semi-high-speed service and modern facilities?",
+    "options": ["Rajdhani Express", "Vande Bharat Express", "Shatabdi Express", "Duronto Express"],
+    "answer": "Vande Bharat Express",
+    "significance": "Vande Bharat Express is India’s first semi-high-speed self-propelled train, offering faster travel and comfort."
+  }
+]
